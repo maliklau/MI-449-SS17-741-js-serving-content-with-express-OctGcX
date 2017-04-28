@@ -1,0 +1,9 @@
+ <title>Harry Potter Fansite</title>
+ <% include ../partials/header %>
+  <h1>Welcome, fellow Wizards!</h1>
+  <% Object.keys(articles).forEach(function (id) { %>
+  <article>
+    <h2><%= articles[id].title %></h2>
+    <li><a href='<%= articles[id].url %>'><%= articles[id].title %></a></li>
+  </article>
+<% }) %>
